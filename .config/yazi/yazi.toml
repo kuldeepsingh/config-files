@@ -1,0 +1,37 @@
+[manager]
+show_hidden = false
+
+# [preview]
+# ueberzug_offset = [0.5, 0.5, -0.5, -0.5]
+# ueberzug_scale  = 1
+
+[plugin]
+prepend_preloaders = [
+  # Replace magick, image, video with mediainfo
+  { mime = "{audio,video,image}/*", run = "mediainfo" },
+  { mime = "application/subrip", run = "mediainfo" },
+]
+
+prepend_previewers = [
+  { name = "*.csv", run = "rich-preview" },   # for csv files
+  { name = "*.md", run = "rich-preview" },    # for markdown (.md) files
+  { name = "*.rst", run = "rich-preview" },   # for restructured text (.rst) files
+  { name = "*.ipynb", run = "rich-preview" }, # for jupyter notebooks (.ipynb)
+  { name = "*.json", run = "rich-preview" },  # for json (.json) files
+  #    { name = "*.lang_type", run = "rich-preview"} # for particular language files eg. .py, .go., .lua, etc.
+
+  # Archive previewer
+  { mime = "application/*zip", run = "ouch" },
+  { mime = "application/x-tar", run = "ouch" },
+  { mime = "application/x-bzip2", run = "ouch" },
+  { mime = "application/x-7z-compressed", run = "ouch" },
+  { mime = "application/x-rar", run = "ouch" },
+  { mime = "application/x-xz", run = "ouch" },
+  { mime = "{audio,video,image}/*", run = "mediainfo" },
+  { mime = "application/subrip", run = "mediainfo" },
+]
+
+[preview]
+# Change them to your desired values
+max_width = 8000
+max_height = 8000

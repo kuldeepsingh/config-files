@@ -1,0 +1,39 @@
+[[plugin.deps]]
+use = "lpnh/fg"
+rev = "3fd438a"
+hash = "892ac513a8aada097d82d98cd6aa9e1f"
+
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "b23e3a4"
+hash = "98e5f5af3efd3ba8bc2db0720187cc83"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:max-preview"
+rev = "92f78dc"
+hash = "a8025f2bb311e869069364fba01abffc"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "92f78dc"
+hash = "812fd49667ab6823250f0411f8cf793a"
+
+[[plugin.deps]]
+use = "dawsers/toggle-view"
+rev = "9ae57f9"
+hash = "9d291f6cecb1f1f5542fc18177d5c107"
+
+[[plugin.deps]]
+use = "boydaihungst/mediainfo"
+rev = "447fe95"
+hash = "dcaebc8bc261206f6b59e2c67464af5"
+
+[[plugin.deps]]
+use = "lpnh/fr"
+rev = "5b6bdee"
+hash = "a0e91093c60ddeb1ee68df4ed7cf317a"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "fd85060"
+hash = "c40e434318a8ceffd01842f8dfb2390e"
